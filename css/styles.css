@@ -58,6 +58,7 @@ button {
 button:focus {
   outline: 0;
 }
+
 .choice:hover{
   background-color: rgba(225,225,225,0.2)
 }
