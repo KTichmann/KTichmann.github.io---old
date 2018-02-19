@@ -1,0 +1,17 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/KTichmann/KTichmann.github.io.git",
+  "author": "KTichmann <ktichmann@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "config.json": "^0.0.4",
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "compile-sass": "node-sass scss/main.scss styles.css -w",
+    "serve": "live-server"
+  }
+}

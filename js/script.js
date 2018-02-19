@@ -9,13 +9,11 @@ if (!NodeList.prototype.forEach && Array.prototype.forEach) {
 //
 function init(){
   websiteUI.switchStyle(2, websiteUI.styleArr);
-  // websiteUI.addAnimation(".portfolioimg", "tada")
-  // navBar();
 }
 //read slider input value...
 const websiteUI = (function(){
   const styleArr = ["minimalist", "creative", "professional", "pretentious"];
-//IIFE to add event listeners to buttons
+  //IIFE to add event listeners to buttons
     (function user_choice(){
       for(let i=0; i < styleArr.length; i++){
         document.getElementById(i.toString()).addEventListener("click", () => {switchStyle(i, styleArr); setActive("li", i)} );
@@ -31,7 +29,7 @@ const websiteUI = (function(){
     //remove hidden tag on all items with selected class
     document.querySelectorAll(`.${choice}`).forEach(item => {item.classList.remove("hidden")});
   }
-  //removes active tag from all elements of type "type" (eg. "#id", ".class" etc.), adds active tag to 
+  //removes active tag from all elements of type "type" (eg. "#id", ".class" etc.), adds active tag to
   function setActive(type, num){
     document.querySelectorAll(type).forEach(item => {item.classList.remove("active")});
     document.getElementById(num).classList.add("active");
@@ -48,14 +46,5 @@ const websiteUI = (function(){
     addAnimation: addAnimation
   };
   })();
-
-//handle the navigation bar
-// function navBar(){
-//   document.querySelector("i").addEventListener("click", function(){
-//     let nav = document.querySelector(".nav").classList
-//     if (nav[1] === "seen"){nav.remove("seen")}
-//     else{nav.add("seen")}
-//   })
-// }
 
 init();

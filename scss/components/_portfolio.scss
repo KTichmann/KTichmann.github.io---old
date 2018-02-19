@@ -1,0 +1,104 @@
+//////Block/////////
+$color-img-txt: #ff9f1c;
+$color-img-hover: #fdfffc;
+$color-portfolio-back: #fde74c;
+$color-img-txt-dark: #941b0c;
+
+#portfolio{
+  padding-top: 2rem;
+  text-align: center;
+  font-family: Lato, Arial;
+  .img-block{
+    height: auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    &:not(:last-child){
+      margin-bottom: 4rem;
+    }
+    &__img{
+      border-radius: .5rem;
+      img{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: .5rem;
+      }
+    }
+    &__txt{
+      padding: 1.5rem 1rem;
+      font-size: 1.1rem;
+      line-height: 2rem;
+      h2{
+        text-transform: uppercase;
+        padding-bottom: .7rem;
+        text-align: center;
+        width: auto;
+          font-size: 1.7rem;
+          font-weight: 900;
+          color: transparent;
+          background-image: linear-gradient(
+            to bottom right,
+            rgba(#ff9f1c, 1),
+            rgba(#941b0c, 0.9)
+          );
+          -webkit-background-clip: text;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px){
+  #portfolio{
+    .header__secondary{
+      padding-bottom: 2rem;
+      font-size: 4rem;
+    }
+    padding-top: 2rem;
+    .img-block{
+      &__img{
+        padding: 0;
+      }
+      &:not(:last-child){
+        margin-bottom: 6rem;
+      }
+      &__txt{
+        padding: 3rem 1.5rem;
+        font-size: 2.2rem;
+        line-height: 3rem;
+        h2{
+          padding-bottom: 1.5rem;
+          font-size: 3rem;
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  #portfolio{
+    .header__secondary{
+      padding-bottom: 2rem;
+      font-size: 6rem;
+    }
+    padding-top: 3rem;
+    .img-block{
+      img{
+        height: 100%;
+        width: 100%;
+      }
+      &:not(:last-child){
+        margin-bottom: 7rem;
+      }
+      &__txt{
+        padding: 3rem 2rem;
+        font-size: 2rem;
+        line-height: 4rem;
+        h2{
+          padding-bottom: 1.5rem;
+          font-size: 2.5rem;
+          color: transparent;
+        }
+      }
+    }
+  }
+}
