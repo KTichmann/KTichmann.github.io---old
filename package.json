@@ -8,7 +8,8 @@
   "license": "MIT",
   "dependencies": {
     "config.json": "^0.0.4",
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.0",
+    "package.json": "^2.0.1"
   },
   "scripts": {
     "compile-sass": "node-sass scss/main.scss styles.css -w",
